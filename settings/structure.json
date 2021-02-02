@@ -1,0 +1,22 @@
+{
+    "monitoring_system":{
+        "type": "composite",
+        "name": "monitoring_system",
+        "attributes":{"value":"", "unit":"", "update":""},
+        "tree": {
+                "rem_zone": {
+                    "type": "composite",
+                    "name": "rem_zone",
+                    "attributes":{"value":"", "unit":"", "update":""},
+                    "tree": {
+                            "sensor_temperature_inside": {
+                                "type": "component",
+                                "name": "temperature_inside",
+                                "path":"/sys/bus/w1/devices/28-031397793061/temperature",
+				"attributes":{"value":"", "unit":"", "update":""}
+                            }
+                    }
+                }
+        }
+    }
+}
