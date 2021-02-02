@@ -11,7 +11,7 @@
                     "tree": {
                             "sensor_temperature_inside": {
                                 "type": "component",
-                                "name": "temperature_inside",
+                                "name": "temperature_outside",
                                 "path":"/sys/bus/w1/devices/28-031397793061/temperature",
 				"attributes":{"value":"", "unit":"", "update":""}
                             }
