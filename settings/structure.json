@@ -4,6 +4,12 @@
         "name": "monitoring_system",
         "attributes":{"value":"", "unit":"", "update":""},
         "tree": {
+		"sensor_temperature_outside": {
+			"type": "component",
+			"name": "temperature_outside",
+                        "path":"/sys/bus/w1/devices/28-031397793061/temperature",
+			"attributes":{"value":"", "unit":"", "update":""}
+		},
                 "rem_zone": {
                     "type": "composite",
                     "name": "rem_zone",
@@ -11,7 +17,7 @@
                     "tree": {
                             "sensor_temperature_inside": {
                                 "type": "component",
-                                "name": "temperature_outside",
+                                "name": "temperature_inside",
                                 "path":"/sys/bus/w1/devices/28-031397793061/temperature",
 				"attributes":{"value":"", "unit":"", "update":""}
                             }
