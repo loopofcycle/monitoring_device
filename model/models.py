@@ -31,7 +31,7 @@ class Sensor(Component):
 	def log(self):
 		date = str(datetime.fromtimestamp(time.mktime(time.localtime())))
 		file_path = os.path.join(
-					os.path.abspath('/home/pi/projects/monitoring/log'),
+					os.path.abspath('/home/pi/projects/monitoring_logs'),
 					str(date[:10] + '_'  + self.name + '.json'))
 		entry = { date: self.value }
 		if os.path.isfile(file_path):
